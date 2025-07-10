@@ -41,7 +41,7 @@ import jagran from './assets/education_logo/jagran.jpg';
 import shopify from "./assets/work_logo/Shopify.png"
 import instagram from "./assets/work_logo/Instagram.png"
 import Doctor from "./assets/work_logo/Doctor.png"
-import workInp from "./assets/work_logo/workimage.png"
+import workInp from "./assets/tech_logo/WorkinPorgress.png"
 import jenkins from "./assets/tech_logo/jenkins.png";
 import Kuber from "./assets/tech_logo/kuber.png"
 import docker from "./assets/tech_logo/docker.png"
