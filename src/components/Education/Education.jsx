@@ -12,7 +12,8 @@ const Education = () => {
         <h2 className="text-4xl font-bold text-white">EDUCATION</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
-          My education has been a journey of learning and development. Here are the details of my academic background
+          My education has been a journey of learning and development. Here are
+          the details of my academic background
         </p>
       </div>
 
@@ -34,15 +35,15 @@ const Education = () => {
               <img
                 src={edu.img}
                 alt={edu.school}
-                className="w-full h-full object-cover rounded-full"
+                className="w-full h-full object-contain rounded-full"
               />
             </div>
 
             {/* Content Section */}
             <div
-              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
+              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl  border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
                 index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
-              } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}
+              } sm:ml-30 sm:mr-30 ml-8 transform transition-transform duration-300 hover:scale-105`}
             >
               {/* Flex container for image and text */}
               <div className="flex items-center space-x-6">
@@ -51,7 +52,7 @@ const Education = () => {
                   <img
                     src={edu.img}
                     alt={edu.school}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
 

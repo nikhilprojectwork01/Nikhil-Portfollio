@@ -20,7 +20,7 @@ const Experience = () => {
       {/* Experience Timeline */}
       <div className="relative">
         {/* Vertical line */}
-        <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full"></div>
+        <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full "></div>
 
         {/* Experience Entries */}
         {experiences.map((experience, index) => (
@@ -41,9 +41,9 @@ const Experience = () => {
 
             {/* Content Section */}
             <div
-              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
-                index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
-              } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}
+              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
+                index % 2 === 0 ? "sm:ml-0" : "sm:mr-[-50px]"
+              } sm:ml-30 sm:mr-30 ml-8 transform transition-transform duration-300 hover:scale-105`}
             >
               {/* Flex container for image and text */}
               <div className="flex items-center space-x-6">
@@ -67,7 +67,9 @@ const Experience = () => {
                     </h4>
                   </div>
                   {/* Date at the bottom */}
-                  <p className="text-sm text-gray-500 mt-2">{experience.date}</p>
+                  <p className="text-sm text-gray-500 mt-2">
+                    {experience.date}
+                  </p>
                 </div>
               </div>
 
